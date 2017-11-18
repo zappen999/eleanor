@@ -1,0 +1,80 @@
+html, body {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 14px;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.grid {
+  margin-top: 50px;
+}
+
+.loglevel {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.loglevel.error {
+  color: #ff3030;
+}
+
+.loglevel.warn {
+  color: #ff8048;
+}
+
+.loglevel.info {
+  color: #7bc8a4;
+}
+
+.loglevel.verbose {
+  color: #3fb8af;
+}
+
+.loglevel.debug {
+  color: #18a5f2;
+}
+
+.loglevel.silly {
+  color: #9d2053;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding: 4px 6px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.detailed-info {
+  display: none;
+}
+
+.btn-query {
+  width: 100%;
+}
+
+.loader {
+  margin-top: 8px;
+  display: none;
+}
+
+.no-hits {
+  display: none;
+}
+
+/* prism overrides */
+:not(pre)>code[class*=language-], pre[class*=language-] {
+  background: unset;
+}
+
+pre[class*=language-] {
+  margin: unset;
+  padding: unset;
+}

@@ -1,0 +1,17 @@
+version: '2'
+services:
+  service: # Main
+    build: .
+    environment:
+      NODE_ENV: 'development'
+      APP_LOG: '/var/log/app.log'
+      PORT: 8000
+    volumes:
+      - ./src:/home/node/app/src
+      - ./scripts:/home/node/app/scripts
+      - ./package.json:/home/node/app/package.json
+      - ./package.lock:/home/node/app/package.lock
+      - ./tsconfig.json:/home/node/app/tsconfig.json
+    ports:
+      - 8000:8000
+      - 9222:9222
